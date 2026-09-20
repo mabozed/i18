@@ -871,7 +871,7 @@ function App() {
 
             <a
               className="mt-8 inline-flex items-center gap-3 rounded-xl border border-[#46b7d3]/25 bg-[#08769c]/15 px-5 py-3.5 text-sm font-extrabold text-[#7dd3fc] transition hover:-translate-y-0.5 hover:border-[#46b7d3]/45 hover:bg-[#08769c]/25"
-              href="https://github.com/mabozed/i18"
+              href="https://github.com/vica-web/i18n"
               target="_blank"
               rel="noreferrer"
             >
