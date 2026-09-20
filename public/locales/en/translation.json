@@ -1,0 +1,47 @@
+{
+  "codeCard": {
+    "label": "React translation code example"
+  },
+  "counter": {
+    "decrease": "Decrease lesson count",
+    "increase": "Increase lesson count"
+  },
+  "examples": {
+    "basic": {
+      "description": "Pass a translation key to the t function.",
+      "result": "Welcome to the i18n demo!",
+      "title": "Basic translation"
+    },
+    "description": "Switch the language above and watch every example update instantly.",
+    "eyebrow": "Live playground",
+    "interpolation": {
+      "description": "Insert safe, reusable values into translated sentences.",
+      "result": "Hello, {{name}}! Glad you are here.",
+      "title": "Dynamic values"
+    },
+    "plural": {
+      "description": "i18next selects the correct form from the count.",
+      "result_one": "{{count}} lesson",
+      "result_other": "{{count}} lessons",
+      "title": "Smart plurals"
+    },
+    "title": "Three patterns you will use every day"
+  },
+  "footer": {
+    "note": "A small bilingual learning project"
+  },
+  "hero": {
+    "action": "Explore the examples",
+    "description": "A practical i18next demo showing how translations, variables, plural rules, and text direction work together in React.",
+    "eyebrow": "React localization, made clear",
+    "title": "One interface. Every language."
+  },
+  "languages": {
+    "arabic": "Arabic",
+    "english": "English"
+  },
+  "languageSwitcher": {
+    "label": "Choose a language",
+    "title": "Language"
+  }
+}
