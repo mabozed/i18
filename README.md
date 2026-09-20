@@ -86,6 +86,137 @@ npm run dev
 
 Open the local URL shown by Vite, then switch between `EN` and `AR` from the language selector.
 
+## Quick installation and usage / التثبيت والاستخدام المبسّط
+
+### 1. Install the packages / تثبيت الحزم
+
+```bash
+npm install i18next react-i18next i18next-http-backend i18next-browser-languagedetector
+```
+
+<p dir="rtl" align="right">
+توفّر <code>i18next</code> نظام الترجمة الأساسي، وتربطها <code>react-i18next</code> بمكوّنات React، بينما تحمّل إضافة HTTP ملفات JSON وتكتشف الإضافة الأخيرة لغة المستخدم وتحفظ اختياره.
+</p>
+
+### 2. Create translation files / إنشاء ملفات الترجمة
+
+Create one JSON file for each language:
+
+```text
+public/locales/
+├── en/translation.json
+└── ar/translation.json
+```
+
+`public/locales/en/translation.json`:
+
+```json
+{
+  "welcome": "Welcome",
+  "changeLanguage": "العربية"
+}
+```
+
+`public/locales/ar/translation.json`:
+
+```json
+{
+  "welcome": "أهلًا بك",
+  "changeLanguage": "English"
+}
+```
+
+<p dir="rtl" align="right">
+يجب أن تكون أسماء المفاتيح مثل <code>welcome</code> متطابقة في كل اللغات، بينما تتغيّر قيمتها فقط.
+</p>
+
+### 3. Configure i18next / إعداد المكتبة
+
+Create `src/i18n.js`:
+
+```js
+import i18n from 'i18next'
+import { initReactI18next } from 'react-i18next'
+import Backend from 'i18next-http-backend'
+import LanguageDetector from 'i18next-browser-languagedetector'
+
+i18n
+  .use(Backend)
+  .use(LanguageDetector)
+  .use(initReactI18next)
+  .init({
+    supportedLngs: ['en', 'ar'],
+    fallbackLng: 'en',
+    backend: {
+      loadPath: '/locales/{{lng}}/translation.json',
+    },
+    detection: {
+      order: ['localStorage', 'navigator'],
+      caches: ['localStorage'],
+    },
+    interpolation: {
+      escapeValue: false,
+    },
+  })
+
+export default i18n
+```
+
+Import the configuration once in `src/main.jsx`, before rendering the application:
+
+```js
+import './i18n.js'
+```
+
+<p dir="rtl" align="right">
+يحمّل هذا الإعداد ملف اللغة المناسبة، ويستخدم الإنجليزية عند عدم توفر لغة المستخدم، ويحفظ اللغة المختارة داخل <code>localStorage</code>.
+</p>
+
+### 4. Translate a component / استخدام الترجمة
+
+```jsx
+import { useTranslation } from 'react-i18next'
+
+function Welcome() {
+  const { t, i18n } = useTranslation()
+
+  const switchLanguage = () => {
+    const nextLanguage = i18n.resolvedLanguage === 'ar' ? 'en' : 'ar'
+    i18n.changeLanguage(nextLanguage)
+  }
+
+  return (
+    <section>
+      <h1>{t('welcome')}</h1>
+      <button type="button" onClick={switchLanguage}>
+        {t('changeLanguage')}
+      </button>
+    </section>
+  )
+}
+```
+
+<p dir="rtl" align="right">
+تبحث الدالة <code>t()</code> عن المفتاح في ملف اللغة الحالية، بينما تغيّر <code>changeLanguage()</code> اللغة فورًا دون إعادة تحميل الصفحة.
+</p>
+
+### 5. Support Arabic direction / دعم اتجاه العربية
+
+```jsx
+import { useEffect } from 'react'
+
+useEffect(() => {
+  const language = i18n.resolvedLanguage || 'en'
+
+  document.documentElement.lang = language
+  document.documentElement.dir = language === 'ar' ? 'rtl' : 'ltr'
+}, [i18n.resolvedLanguage])
+```
+
+<p dir="rtl" align="right">
+بهذا تتغير لغة المستند واتجاه الصفحة بالكامل بين <code>RTL</code> و<code>LTR</code>. راجع ملفات الشرح الكاملة أدناه للتعرف على المتغيرات وصيغ الجمع وأداة جمع المفاتيح وإضافة لغات جديدة.
+</p>
+
 ## Translation tooling / أدوات الترجمة
 
 ```bash
