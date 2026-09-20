@@ -4,6 +4,8 @@
 
 <p><strong>اللغة:</strong> العربية · <a href="./USING_CSS_ONLY_EN.md">English</a> · <a href="../README.md">العودة إلى README</a></p>
 
+<p>جزء من مشروع Vica Web Solutions التعليمي لتعلّم الترجمة.</p>
+
 <p>المشروع الحالي يستخدم Tailwind CSS 4. هذا الملف مرجع للعودة إلى CSS التقليدي في مشروع آخر أو في نسخة منفصلة من هذا المشروع.</p>
 
 </div>

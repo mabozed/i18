@@ -1,16 +1,19 @@
 <div align="center">
 
-# React i18next Learning Demo
+<img src="./src/assets/Vica%20Web%20Solutions2.png" alt="Vica Web Solutions" width="240" />
 
-**A bilingual, practical guide to internationalization in React**  
-**مشروع عملي ثنائي اللغة لتعلّم الترجمة في React**
+# Vica i18n Academy
+
+A bilingual React learning project by Vica Web Solutions.
+
+**أكاديمية عملية ثنائية اللغة لتعلّم i18n في React، مقدمة من Vica Web Solutions**
 
 [![React](https://img.shields.io/badge/React-18-149ECA?logo=react&logoColor=white)](https://react.dev/)
 [![i18next](https://img.shields.io/badge/i18next-23-26A69A?logo=i18next&logoColor=white)](https://www.i18next.com/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![Vite](https://img.shields.io/badge/Vite-5-646CFF?logo=vite&logoColor=white)](https://vite.dev/)
 
-[English](#english) · [العربية](#العربية) · [Documentation](#documentation--ملفات-الشرح) · [Commands](#translation-tooling--أدوات-الترجمة)
+[Live Demo](https://i18n-learn.vercel.app/) · [Repository](https://github.com/mabozed/i18) · [English](#english) · [العربية](#العربية)
 
 </div>
 
@@ -18,204 +21,106 @@
 
 ## English
 
-This educational project demonstrates a complete internationalization workflow in React using `i18next`, `react-i18next`, and the official `i18next-cli`. It includes a responsive interface built entirely with Tailwind CSS 4 and supports both English LTR and Arabic RTL layouts.
+This project is a practical bilingual learning experience for React localization using `i18next`, `react-i18next`, and `i18next-cli`. It includes a polished landing page, interactive examples, and full documentation in both English and Arabic.
 
-### What you will learn
+### Highlights
 
-- Load JSON translations through an HTTP backend.
-- Detect the browser language and remember the user's choice.
-- Switch languages without reloading the page.
-- Interpolate dynamic values safely.
-- Handle English and Arabic plural rules.
-- Synchronize `lang` and `dir` for accessible LTR/RTL layouts.
-- Extract and validate translation keys with the official CLI.
-- Build responsive bilingual interfaces with Tailwind CSS.
+- English + Arabic interface support
+- RTL and LTR switching
+- Browser language detection and saved preference
+- Dynamic interpolation and plural rules
+- Tailwind-based responsive design
+- Real-world i18n workflow setup
 
-## العربية
-
-<p dir="rtl" align="right">
-هذا مشروع تعليمي يشرح دورة عمل الترجمة الكاملة في React باستخدام
-<code>i18next</code> و<code>react-i18next</code> والأداة الرسمية
-<code>i18next-cli</code>. يحتوي المشروع على واجهة متجاوبة مبنية بالكامل باستخدام
-Tailwind CSS 4، مع دعم الاتجاهين الإنجليزي LTR والعربي RTL.
-</p>
-
-<p dir="rtl" align="right"><strong>ستتعلّم من خلاله:</strong></p>
-
-<ul dir="rtl" align="right">
-  <li>تحميل ملفات الترجمة بصيغة JSON عبر HTTP.</li>
-  <li>اكتشاف لغة المتصفح وحفظ اختيار المستخدم.</li>
-  <li>تبديل اللغة دون إعادة تحميل الصفحة.</li>
-  <li>تمرير القيم المتغيرة واستخدام صيغ الجمع العربية والإنجليزية.</li>
-  <li>تحديث خصائص <code>lang</code> و<code>dir</code> لدعم RTL وLTR.</li>
-  <li>جمع مفاتيح الترجمة وفحصها باستخدام الأداة الرسمية.</li>
-  <li>إنشاء واجهة ثنائية اللغة باستخدام Tailwind CSS.</li>
-</ul>
-
-## Preview features
-
-| Feature | Included |
-|---|:---:|
-| English and Arabic | ✅ |
-| Automatic language detection | ✅ |
-| Saved language preference | ✅ |
-| RTL/LTR switching | ✅ |
-| Interpolation examples | ✅ |
-| Arabic plural forms | ✅ |
-| Automatic key extraction | ✅ |
-| Responsive Tailwind UI | ✅ |
-
-## Tech stack
+### Stack
 
 - React 18
 - Vite 5
-- i18next and react-i18next
+- i18next + react-i18next
 - i18next HTTP Backend
 - Browser Language Detector
-- Official i18next CLI
 - Tailwind CSS 4
 
-## Getting started
+### Run locally
 
 ```bash
-git clone <your-repository-url>
-cd react-i18next-learning-demo
+git clone https://github.com/mabozed/i18.git
+cd i18
 npm install
 npm run dev
 ```
 
-Open the local URL shown by Vite, then switch between `EN` and `AR` from the language selector.
+Then open the local Vite URL and switch between `EN` and `AR`.
 
-## Quick installation and usage / التثبيت والاستخدام المبسّط
+## العربية
 
-### 1. Install the packages / تثبيت الحزم
+هذا المشروع عبارة عن تجربة تعليمية عملية لتعلم الترجمة في React باستخدام `i18next` و`react-i18next` و`i18next-cli`. ويحتوي على صفحة هبوط أنيقة، أمثلة تفاعلية، ووثائق كاملة باللغتين الإنجليزية والعربية.
+
+### المزايا
+
+- دعم واجهة باللغتين الإنجليزية والعربية
+- تبديل بين RTL وLTR
+- اكتشاف لغة المتصفح وحفظ التفضيل
+- interpolations وقواعد الجمع
+- تصميم متجاوب باستخدام Tailwind
+- سير عمل عملي لإعداد i18n
+
+### التقنيات المستخدمة
+
+- React 18
+- Vite 5
+- i18next + react-i18next
+- i18next HTTP Backend
+- Browser Language Detector
+- Tailwind CSS 4
+
+### التشغيل محليًا
 
 ```bash
-npm install i18next react-i18next i18next-http-backend i18next-browser-languagedetector
+git clone https://github.com/mabozed/i18.git
+cd i18
+npm install
+npm run dev
 ```
 
-<p dir="rtl" align="right">
-توفّر <code>i18next</code> نظام الترجمة الأساسي، وتربطها <code>react-i18next</code> بمكوّنات React، بينما تحمّل إضافة HTTP ملفات JSON وتكتشف الإضافة الأخيرة لغة المستخدم وتحفظ اختياره.
-</p>
+ثم افتح رابط Vite المحلي وقم بالتبديل بين `EN` و`AR`.
 
-### 2. Create translation files / إنشاء ملفات الترجمة
+---
 
-Create one JSON file for each language:
+## Project structure
 
 ```text
-public/locales/
-├── en/translation.json
-└── ar/translation.json
+.
+├── public/
+│   └── locales/
+│       ├── en/translation.json
+│       └── ar/translation.json
+├── src/
+│   ├── App.jsx
+│   ├── i18n.js
+│   └── main.jsx
+├── index.html
+├── package.json
+├── README.md
+└── vite.config.js
 ```
 
-`public/locales/en/translation.json`:
+## Useful commands
 
-```json
-{
-  "welcome": "Welcome",
-  "changeLanguage": "العربية"
-}
+```bash
+npm run dev
+npm run build
+npm run i18n:status
+npm run i18n:extract
 ```
 
-`public/locales/ar/translation.json`:
+## Live demo
 
-```json
-{
-  "welcome": "أهلًا بك",
-  "changeLanguage": "English"
-}
-```
+https://i18n-learn.vercel.app/
 
-<p dir="rtl" align="right">
-يجب أن تكون أسماء المفاتيح مثل <code>welcome</code> متطابقة في كل اللغات، بينما تتغيّر قيمتها فقط.
-</p>
+## Notes
 
-### 3. Configure i18next / إعداد المكتبة
-
-Create `src/i18n.js`:
-
-```js
-import i18n from 'i18next'
-import { initReactI18next } from 'react-i18next'
-import Backend from 'i18next-http-backend'
-import LanguageDetector from 'i18next-browser-languagedetector'
-
-i18n
-  .use(Backend)
-  .use(LanguageDetector)
-  .use(initReactI18next)
-  .init({
-    supportedLngs: ['en', 'ar'],
-    fallbackLng: 'en',
-    backend: {
-      loadPath: '/locales/{{lng}}/translation.json',
-    },
-    detection: {
-      order: ['localStorage', 'navigator'],
-      caches: ['localStorage'],
-    },
-    interpolation: {
-      escapeValue: false,
-    },
-  })
-
-export default i18n
-```
-
-Import the configuration once in `src/main.jsx`, before rendering the application:
-
-```js
-import './i18n.js'
-```
-
-<p dir="rtl" align="right">
-يحمّل هذا الإعداد ملف اللغة المناسبة، ويستخدم الإنجليزية عند عدم توفر لغة المستخدم، ويحفظ اللغة المختارة داخل <code>localStorage</code>.
-</p>
-
-### 4. Translate a component / استخدام الترجمة
-
-```jsx
-import { useTranslation } from 'react-i18next'
-
-function Welcome() {
-  const { t, i18n } = useTranslation()
-
-  const switchLanguage = () => {
-    const nextLanguage = i18n.resolvedLanguage === 'ar' ? 'en' : 'ar'
-    i18n.changeLanguage(nextLanguage)
-  }
-
-  return (
-    <section>
-      <h1>{t('welcome')}</h1>
-      <button type="button" onClick={switchLanguage}>
-        {t('changeLanguage')}
-      </button>
-    </section>
-  )
-}
-```
-
-<p dir="rtl" align="right">
-تبحث الدالة <code>t()</code> عن المفتاح في ملف اللغة الحالية، بينما تغيّر <code>changeLanguage()</code> اللغة فورًا دون إعادة تحميل الصفحة.
-</p>
-
-### 5. Support Arabic direction / دعم اتجاه العربية
-
-```jsx
-import { useEffect } from 'react'
-
-useEffect(() => {
-  const language = i18n.resolvedLanguage || 'en'
-
-  document.documentElement.lang = language
-  document.documentElement.dir = language === 'ar' ? 'rtl' : 'ltr'
-}, [i18n.resolvedLanguage])
-```
-
-<p dir="rtl" align="right">
-بهذا تتغير لغة المستند واتجاه الصفحة بالكامل بين <code>RTL</code> و<code>LTR</code>. راجع ملفات الشرح الكاملة أدناه للتعرف على المتغيرات وصيغ الجمع وأداة جمع المفاتيح وإضافة لغات جديدة.
-</p>
+Designed for learning, experimentation, and practical bilingual UI development with real localization flows.
 
 ## Translation tooling / شرح أداة جمع الترجمات
 
@@ -275,11 +180,11 @@ Add these scripts to `package.json`:
 }
 ```
 
-| Command | What it does | الوظيفة |
-|---|---|---|
-| `npm run i18n:extract` | Extracts keys once and updates locale files. | يجمع المفاتيح مرة واحدة ويحدّث ملفات اللغات. |
-| `npm run i18n:watch` | Watches source files and extracts after changes. | يراقب الملفات ويعيد الجمع بعد التعديلات. |
-| `npm run i18n:status` | Reports missing keys and completion percentages. | يعرض المفاتيح الناقصة ونسبة اكتمال كل لغة. |
+| Command                | What it does                                     | الوظيفة                                      |
+| ---------------------- | ------------------------------------------------ | -------------------------------------------- |
+| `npm run i18n:extract` | Extracts keys once and updates locale files.     | يجمع المفاتيح مرة واحدة ويحدّث ملفات اللغات. |
+| `npm run i18n:watch`   | Watches source files and extracts after changes. | يراقب الملفات ويعيد الجمع بعد التعديلات.     |
+| `npm run i18n:status`  | Reports missing keys and completion percentages. | يعرض المفاتيح الناقصة ونسبة اكتمال كل لغة.   |
 
 ### 4. How extraction works / كيف تعمل الأداة؟
 
@@ -368,6 +273,7 @@ t(menuKeys[item.name])
 │   ├── ar/translation.json
 │   └── en/translation.json
 ├── src/
+│   ├── assets/Vica Web Solutions.png
 │   ├── App.jsx
 │   ├── i18n.js
 │   ├── index.css
@@ -378,10 +284,10 @@ t(menuKeys[item.name])
 
 ## Documentation / ملفات الشرح
 
-| Language | Complete i18next guide | CSS-only alternative |
-|---|---|---|
-| English | [Complete i18next and CLI guide](./docs/I18NEXT_COMPLETE_GUIDE_EN.md) | [Using plain CSS instead of Tailwind](./docs/USING_CSS_ONLY_EN.md) |
-| العربية | [الدليل الشامل للمكتبة والأداة](./docs/I18NEXT_COMPLETE_GUIDE_AR.md) | [استخدام CSS التقليدي بدل Tailwind](./docs/USING_CSS_ONLY_AR.md) |
+| Language | Complete i18next guide                                                | CSS-only alternative                                               |
+| -------- | --------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| English  | [Complete i18next and CLI guide](./docs/I18NEXT_COMPLETE_GUIDE_EN.md) | [Using plain CSS instead of Tailwind](./docs/USING_CSS_ONLY_EN.md) |
+| العربية  | [الدليل الشامل للمكتبة والأداة](./docs/I18NEXT_COMPLETE_GUIDE_AR.md)  | [استخدام CSS التقليدي بدل Tailwind](./docs/USING_CSS_ONLY_AR.md)   |
 
 ## Quality checks
 
@@ -393,11 +299,28 @@ npm run build
 
 GitHub Actions runs the same checks automatically for pushes and pull requests targeting `main`.
 
+## About Vica Web Solutions / عن الشركة
+
+**Vica Web Solutions** created this repository as an educational reference for developers building multilingual React interfaces. The project focuses on practical understanding, Arabic-first RTL quality, clean examples, and a workflow that can grow from a small demo into a production application.
+
+<p dir="rtl" align="right">
+أنشأت شركة <strong>Vica Web Solutions</strong> هذا المستودع ليكون مرجعًا تعليميًا للمطورين الذين يبنون واجهات React متعددة اللغات. يركز المشروع على الفهم العملي، وجودة تجربة العربية واتجاه RTL، ووضوح الأمثلة، وتقديم دورة عمل قابلة للانتقال من مشروع تعليمي صغير إلى تطبيق فعلي.
+</p>
+
+### Educational goals / الأهداف التعليمية
+
+| Goal                                             | الهدف                                          |
+| ------------------------------------------------ | ---------------------------------------------- |
+| Explain localization through working code        | شرح الترجمة من خلال كود يعمل فعليًا            |
+| Treat Arabic and RTL as first-class requirements | التعامل مع العربية وRTL كمتطلبات أساسية        |
+| Document both the library and its official CLI   | توثيق المكتبة وأداة CLI الرسمية                |
+| Keep the repository approachable and reusable    | إبقاء المستودع واضحًا وقابلًا لإعادة الاستخدام |
+
 ---
 
 <div align="center">
 
-Built as a focused learning reference for React internationalization.  
-صُمّم كمرجع عملي ومختصر لتعلّم الترجمة في React.
+Designed and maintained as an educational initiative by **Vica Web Solutions**.  
+صُمّم ويُطوّر كمبادرة تعليمية من **Vica Web Solutions**.
 
 </div>

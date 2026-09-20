@@ -46,9 +46,34 @@
     },
     "title": "A simple flow with clear responsibilities"
   },
+  "brand": {
+    "academy": "Vica",
+    "initiative": "An educational content",
+    "logoAlt": "Vica Web Solutions logo"
+  },
   "common": {
     "copied": "Copied",
     "copy": "Copy"
+  },
+  "company": {
+    "description": "This open educational experience was designed by Vica Web Solutions to turn internationalization from scattered configuration into a clear, practical learning path. It combines explanation, live examples, RTL support, and production-minded tooling in one bilingual reference.",
+    "eyebrow": "Presented by Vica Web Solutions",
+    "repository": "Open the GitHub repository",
+    "title": "Practical knowledge, built to be shared",
+    "values": {
+      "bilingual": {
+        "description": "Arabic and English receive equal attention in content, layout, and direction.",
+        "title": "Bilingual by design"
+      },
+      "open": {
+        "description": "The repository and guides are structured for learning, reuse, and contribution.",
+        "title": "Open knowledge"
+      },
+      "practical": {
+        "description": "Every concept is paired with code, visual explanation, or a live interaction.",
+        "title": "Practice first"
+      }
+    }
   },
   "counter": {
     "decrease": "Decrease lesson count",
@@ -102,6 +127,7 @@
   },
   "hero": {
     "action": "Start learning",
+    "byCompany": "An educational project by Vica Web Solutions",
     "demoCard": {
       "description": "Switch between Arabic and English above",
       "title": "This page is the demo"
@@ -109,7 +135,7 @@
     "description": "Learn the complete React localization workflow—from the first install to RTL layouts, plural rules, and automatic key extraction.",
     "eyebrow": "A visual i18next learning path",
     "secondaryAction": "Explore the CLI",
-    "title": "Build for every language."
+    "title": "Build for\nevery language."
   },
   "languages": {
     "arabic": "Arabic",
@@ -129,7 +155,6 @@
     "examples": "Examples",
     "label": "Main navigation",
     "learn": "Learn",
-    "subtitle": "React localization",
     "toolkit": "CLI toolkit"
   },
   "practices": {

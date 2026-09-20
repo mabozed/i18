@@ -4,6 +4,8 @@
 
 <p><strong>اللغة:</strong> العربية · <a href="./I18NEXT_COMPLETE_GUIDE_EN.md">English</a> · <a href="../README.md">العودة إلى README</a></p>
 
+<p>مرجع تعليمي مقدم من <strong>Vica Web Solutions</strong>.</p>
+
 <blockquote>
 هذا الدليل يشرح بنية الترجمة المستخدمة في المشروع، وطريقة إضافة النصوص واللغات، ودعم اتجاه RTL، واستخراج المفاتيح تلقائيًا، وأهم الأخطاء الشائعة.
 </blockquote>

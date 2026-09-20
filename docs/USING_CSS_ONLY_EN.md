@@ -2,6 +2,8 @@
 
 > **Language:** English · [العربية](./USING_CSS_ONLY_AR.md) · [Back to README](../README.md)
 
+> Part of the **Vica Web Solutions** educational i18n project.
+
 The current project uses Tailwind CSS 4. This document explains how to switch a separate copy of the project to traditional CSS.
 
 > Do not remove Tailwind from the current project unless you intend to rewrite its utility classes. The interface currently depends on them.

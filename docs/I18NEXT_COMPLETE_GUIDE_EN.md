@@ -2,6 +2,8 @@
 
 > **Language:** English · [العربية](./I18NEXT_COMPLETE_GUIDE_AR.md) · [Back to README](../README.md)
 
+> An educational reference by **Vica Web Solutions**.
+
 This guide explains the project's internationalization architecture, daily translation workflow, official extraction tool, RTL support, and common troubleshooting steps.
 
 ## Table of contents

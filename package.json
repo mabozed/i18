@@ -1,7 +1,24 @@
 {
-  "name": "my-react-app",
+  "name": "vica-i18n-academy",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "A bilingual React internationalization learning project by Vica Web Solutions.",
+  "author": "Vica Web Solutions",
+  "homepage": "https://github.com/mabozed/i18",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mabozed/i18.git"
+  },
+  "keywords": [
+    "i18next",
+    "react-i18next",
+    "internationalization",
+    "localization",
+    "rtl",
+    "arabic",
+    "education",
+    "vica-web-solutions"
+  ],
   "type": "module",
   "scripts": {
     "dev": "vite",
